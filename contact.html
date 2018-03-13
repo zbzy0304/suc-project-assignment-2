@@ -30,14 +30,14 @@
     padding: 15px;
   }
   .column2.left{
-  width: 33%;
+  width: 30%;
   }
   .column2.right{
-  width: 33%;
+  width: 30%;
   }
   .column2 {
     float: left;
-    width: 33%;
+    width: 30%;
     padding: 15px;
   }
   .row:after {
@@ -89,7 +89,46 @@
   <a href="javascript:void(0);" style="font-size:15px;"" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 	<h2 style="text-align: center;color: black;">Contact Us</h2>
-  <section id="boxes">
+  <div class="row2" style="">
+        <div class="column2 left">
+           
+          <img class="roundimg" src="img/address.png">
+          <h3>Our Address</h3>
+          <p>1, Jalan Satu, Taman Satu, 81750, Masai, Johor.</p>
+          <p>Closed on Saturday and Sunday.</p>
+        
+        </div>
+    <div class="column2">
+    <img class="roundimg" src="img/message.png">
+          <h3>Message Us</h3>
+          <form>
+        <label for="name"><b>Name: </b></label>
+        <div>
+          <input type="text" name="name" placeholder="Name" style="width: 100%;">
+        </div>
+        <label for="contact_number"><b>Contact Number: </b></label>
+        <div>
+          <input type="number" name="contact_number" placeholder="Telephone Number" style="width: 100%;">
+        </div>
+        <label for="contact_email"><b>E-mail: </b></label>
+        <div>
+          <input type="email" name="contact_email" placeholder="E-mail Address" style="width: 100%;">
+        </div>
+        <label for="message"><b>Messages: </b></label>
+        <div>
+          <textarea style="width: 100%;" placeholder="Write your message here..."></textarea>
+        </div>
+        <input type="submit" name="submit">
+      </form>
+  </div>
+  <div class="column2 right">
+         <img class="roundimg" src="img/email.png">
+          <h3>Email Us</h3>
+          <p><a href="mailto:zbzy0304@hotmail.com" style="text-decoration: none;color: purple;"> zbzy0304@hotmail.com</a></p>
+          <p>We will reply you as soon as possible.</p>
+  </div>
+</div>
+  <!-- <section id="boxes">
       <div class="container">
         <div class="box">
           <img src="img/address.png">
@@ -127,7 +166,7 @@
           <p>We will reply you as soon as possible.</p>
           </div>
       </div>
-    </section>
+    </section> -->
     <br><br>
 <div class="row2" style="">
         <div class="column2 left">
@@ -157,7 +196,7 @@
 {
   var x = document.getElementById("top_nav");
   if(x.className === "topnav")
-  {
+  { 
     x.className += " responsive";
   }
   else
