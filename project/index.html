@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The SmallShop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="img/logo.png">
+</head>
+<body style="background-color: lightgray;">
+	<div class="header">
+		<a href="index.html" id="top_title">
+			<img src="img/logo.png" id="logo">
+		</a>
+		<h2>The SmallShop</h2>
+	
+</div>
+<div class="topnav" id="top_nav">
+	<a href="index.html" class="current">Home</a>
+	<a href="product.html" target="blank">Product</a>
+	<a href="about.html" target="blank">About</a>
+	<a href="contact.html" target="blank">Contact</a>
+	<a href="javascript:void(0);" style="font-size:15px;"" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	<div class="slideshow_container">
+		<p style="text-align: center;font-weight: bold;font-size: 32px;">Small Gallery</p>
+		<div class="mySlides fade">
+			<img src="img/first.jpg" style="width: 100%;">
+		</div>
+		<div class="mySlides fade">
+			<img src="img/second.jpg" style="width: 100%;">
+		</div>
+		<div class="mySlides fade">
+			<img src="img/third.jpg" style="width: 100%;">
+		</div>
+		<div class="mySlides fade">
+			<img src="img/fourth.jpg" style="width: 100%;">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>  
+	</div>
+<div class="row">
+  <div class="column left">
+    
+  </div>
+  <div class="column">
+    <h3>Online View</h3>
+    <p>
+    View your favorite clothing online now.
+    </p>
+    <p class="small_content">
+	This will make you easier to choose a beautiful clothing, you can view it at online. Ather that, come to our physical store try out and buy it.
+	</p>
+	<p class="small_content">
+	This will save a lot of your precious time. "There is <span style="font-weight: bold; color: red; font-size: 25px;">NOTHING</span> more precious than time." Let's try it NOW!!
+	</p>
+  </div>
+  <aside id="sidebar">
+          <div class="dark">
+           <h3>BUSINESS HOURS</h3>
+			<p><b>Monday - Friday:</b> 9:00 a.m.-10.30 p.m.</p>
+		<h3>CONTACT</h3>
+			<p><b>Telephone:</b> 016 704 6339</p>
+			<p><b>E-mail:</b><a href="mailto:zbzy0304@hotmail.com" style="text-decoration: none;color: purple;"> zbzy0304@hotmail.com</a></p>
+		<h3>LOCATION</h3>
+			<p>1, Jalan Satu, Taman Satu, 81750, Johor, Masai.</p>
+        </aside>
+
+
+
+<!--   <div class="column right">
+    	<h3>BUSINESS HOURS</h3>
+			<p><b>Monday - Friday:</b> 9:00 a.m.-10.30 p.m.</p>
+		<h3>CONTACT</h3>
+			<p><b>Telephone:</b> 016 704 6339</p>
+			<p><b>E-mail:</b><a href="mailto:zbzy0304@hotmail.com" style="text-decoration: none;color: purple;"> zbzy0304@hotmail.com</a></p>
+		<h3>LOCATION</h3>
+			<p>1, Jalan Satu, Taman Satu, 81750, Johor, Masai.</p>
+  </div> -->
+</div>
+	<footer style="background-color: #1f1f1f; color: white;text-align: center;padding: 25px 0 0 0;height: 100%;">
+		<p>The SmallShop, 1, Jalan Satu, Taman Satu, 81750, Masai, Johor.
+		</p>
+		<a href="https://www.facebook.com/jiajun.ng.7" target="blank" class="icon"><i class="fa fa-facebook-f" style="font-size:36px"></i></a>
+		<a href="https://www.instagram.com/jiajun0304/" target="blank" class="icon"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+		<p>&copy;Copyright The SmallShop 2018.</p>
+	</footer>
+</body>
+<script type="text/javascript">
+	function myFunction()
+{
+	var x = document.getElementById("top_nav");
+	if(x.className === "topnav")
+	{
+		x.className += " responsive";
+	}
+	else
+	{
+		x.className = "topnav";
+	}
+}
+	var slideIndex = 1;
+		showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  	showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  	showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}    
+	  	if (n < 1) {slideIndex = slides.length}
+	  	for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  	}
+	  	for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  	}
+	  	slides[slideIndex-1].style.display = "block";  
+	  	dots[slideIndex-1].className += " active";
+	}
+		var myIndex = 0;
+		carousel();
+
+	function carousel() {
+   		var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       	x[i].style.display = "none";  
+    }
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    	x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 4000); 
+	}
+</script>
+</html>

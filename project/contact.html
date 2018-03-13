@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact | The SmallShop</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/logo.png">
+<style type="text/css">
+	h1{
+		text-align: center;
+	}
+  .row{
+    text-align: center;
+    padding-left: 25%;
+
+  }
+  .row2{
+    text-align: center;
+  }
+  .column1.left{
+  width: 20%;
+  }
+  .column1.right{
+  width: 20%;
+  }
+  .column1 {
+    float: left;
+    width: 20%;
+    padding: 15px;
+  }
+  .column2.left{
+  width: 33%;
+  }
+  .column2.right{
+  width: 33%;
+  }
+  .column2 {
+    float: left;
+    width: 33%;
+    padding: 15px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width:600px) {
+    .column1 {
+        width: 100%;
+    }
+    .column1.left{
+      width: 100%;
+    }
+    .column1.right{
+      width: 100%;
+    }
+    .column2 {
+        width: 100%;
+    }
+    .column2.left{
+      width: 100%;
+    }
+    .column2.right{
+      width: 100%;
+    }
+}
+</style>
+</head>
+<body style="background-color: lightgray;">
+	<div class="header">
+  <a href="index.html" id="top_title">
+    <img src="img/logo.png" id="logo">
+    </a>
+    <h2>The SmallShop</h2>
+  
+</div>
+<div class="topnav" id="top_nav">
+  <a href="index.html">Home</a>
+  <a href="product.html" target="blank">Product</a>
+  <a href="about.html" target="blank">About</a>
+  <a href="contact.html" target="blank" class="current">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;"" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	<h2 style="text-align: center;color: black;">Contact Us</h2>
+  <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="img/address.png">
+          <h3>Our Address</h3>
+          <p>1, Jalan Satu, Taman Satu, 81750, Masai, Johor.</p>
+          <p>Closed on Saturday and Sunday.</p>
+        </div>
+        <div class="box">
+          <img src="img/message.png">
+          <h3>Message Us</h3>
+          <form>
+        <label for="name"><b>Name: </b></label>
+        <div>
+          <input type="text" name="name" placeholder="Name" style="width: 100%;">
+        </div>
+        <label for="contact_number"><b>Contact Number: </b></label>
+        <div>
+          <input type="number" name="contact_number" placeholder="Telephone Number" style="width: 100%;">
+        </div>
+        <label for="contact_email"><b>E-mail: </b></label>
+        <div>
+          <input type="email" name="contact_email" placeholder="E-mail Address" style="width: 100%;">
+        </div>
+        <label for="message"><b>Messages: </b></label>
+        <div>
+          <textarea style="width: 100%;" placeholder="Write your message here..."></textarea>
+        </div>
+        <input type="submit" name="submit">
+      </form>
+        </div>
+        <div class="box">
+          <img src="img/email.png">
+          <h3>Email Us</h3>
+          <p><a href="mailto:zbzy0304@hotmail.com" style="text-decoration: none;color: purple;"> zbzy0304@hotmail.com</a></p>
+          <p>We will reply you as soon as possible.</p>
+          </div>
+      </div>
+    </section>
+    <br><br>
+<div class="row2" style="">
+        <div class="column2 left">
+        </div>
+    <div class="column2">
+  <!--     <p style="font-size: 45px;font-weight: bold;">About The SmallShop</p>
+      <p>The SmallShop is a fashion destination for you guys. We sell cutting-edge fashion-related content, making The SmallShop the hub of a thriving fashion community.</p>
+      <p>We sell over 30,000 branded and own-brand products.</p>
+      <p style="font-size: 28px;font-weight: bold;">Join Us Now</p>
+      <p>We are constantly striving to push boundaries and drive our business forward.</p>
+      <p>We thrive in a culture of restlessness and innovation, which is why we are always on the lookout for talented and inspired people to join the team - people who share our vision, who can make a difference and who want to be part of something big.</p> -->
+  </div>
+  <div class="column2 right">
+    
+  </div>
+</div>
+  <footer style="background-color: #1f1f1f; color: white;text-align: center;padding: 25px 0 0 0;height: 100%;">
+    <p>The SmallShop, 1, Jalan Satu, Taman Satu, 81750, Masai, Johor.
+    </p>
+    <a href="https://www.facebook.com/jiajun.ng.7" target="blank" class="icon"><i class="fa fa-facebook-f" style="font-size:36px"></i></a>
+    <a href="https://www.instagram.com/jiajun0304/" target="blank" class="icon"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+    <p>&copy;Copyright The SmallShop 2018.</p>
+  </footer>
+</body>
+<script type="text/javascript">
+  function myFunction()
+{
+  var x = document.getElementById("top_nav");
+  if(x.className === "topnav")
+  {
+    x.className += " responsive";
+  }
+  else
+  {
+    x.className = "topnav";
+  }
+}
+</script>
+</html>,
