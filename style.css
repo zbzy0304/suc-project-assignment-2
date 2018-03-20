@@ -117,13 +117,13 @@ h3{
   }*/
 @media (max-width:600px) {
     .column {
-        width: 100%;
+        width: 95%;
     }
     .column.left{
-    	width: 100%;
+    	width: 95%;
     }
     .column.right{
-    	width: 100%;
+    	width: 95%;
     }
 }
 @media screen and (max-width: 600px)
