@@ -116,7 +116,7 @@ h3{
     width:100%;
   }*/
 @media (max-width:600px) {
-     .column {
+    .column {
         width: 95%;
     }
     .column.left{
